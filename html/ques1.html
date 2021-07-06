@@ -4,23 +4,31 @@
     <head>    
         <title>Page: 01</title>
         <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/ques1.css">
         <script src="../scripts/script.js"></script>
     </head>
     
     <body>
-        <div id="ques_sec">
-            <h1>Puzzle1:  The answer for this puzzle is yourname</h1>
-            <h4>Description:<h4>
-            <p>Just type your answer below(after erasing the already written text) and click on check answer.</p>
-            <p>If it is correct then click on next to advance to next level</p>
-            <input id="ans1" type="text" value="Erase me and type here"><br>
-            <button type="button" name="ans1" onclick=ques1()>check answer</button>
-        </div>
+        <div class="forContent">
+            <div id="ques_sec">
+                <h1>Puzzle1:  The answer for this puzzle is yourname</h1>
+                <h4>Description:<h4>
+                <p>Just type your answer below(after erasing the already written text) and click on check answer.</p>
+                <p>If it is correct then click on next to advance to next level</p>
+            </div>
 
-        <div id="result_sec">
-            <p id="result_p">random text! this may change</p> <br>
-            <a href="ques2.html"><button type="button" id="next" disabled>Next</button></a>
-        </div>
+            <div id="answer_sec">
+                <input id="ans1" type="text" value="Erase me and type here"><br>
+                <button type="button" name="ans1" onclick=ques1()>check answer</button>
+                <p id="result_p">random text! this may change</p> <br>
+                <a href="ques2.html"><button type="button" id="next" disabled>Next</button></a>
+            </div>
+
+         </div>
+
+         <div class="forImage">
+             <img src="" alt="image for ques1" />
+         </div>
 
 
     </body>
