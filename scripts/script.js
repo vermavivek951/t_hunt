@@ -2,7 +2,7 @@
 const myMap = {
     "ques1":"yourname" ,
     "ques2":"blue" ,
-    "ques3": "ans3"
+    "ques3": "19102007"
 }
 
 function checkAnswer(user_ans ,true_ans) {
@@ -10,7 +10,8 @@ function checkAnswer(user_ans ,true_ans) {
         document.getElementById("result_p").innerHTML = "Correct! You can advance to the next level";
         document.getElementById("next").disabled = false;
     } else {
-        document.getElementById("result_p").innerHTML = "Try again!";
+        document.getElementById("result_p").innerHTML = "Wrong answer! Try again!";
+        document.getElementById("next").disabled = true;
     }  
 
 }
